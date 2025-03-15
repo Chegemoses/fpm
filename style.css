@@ -1,0 +1,258 @@
+/* General Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.horizontal-nav {
+    display: flex;
+    justify-content: right;
+    background-color: #10d305;
+    padding: 10px;
+}
+
+.horizontal-nav p {
+    margin: 0 15px;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.horizontal-nav p:hover {
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.5);
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.intro-left, .intro-right {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.intro-left img, .intro-right img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-left, .service-right, .service-center {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-left img, .service-right img, .service-center img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.service-center {
+    order: 3;
+    width: 100%;
+    max-width: 600px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    padding: 10px;
+}
+
+
+.founder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 15px; 
+    max-width: 600px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.founder img{
+    flex: 1;
+    width: 180px; 
+    height: auto;
+    margin-bottom: 5px; 
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.founder-intro{
+flex: 1;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    padding: 10px; 
+}
+
+
+.part-left, .part-right {
+    flex: 1;
+    min-width: 250px; 
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px; 
+}
+
+.partners img {
+    width: 180px; 
+    height: auto;
+    margin-bottom: 5px; 
+}
+
+
+.part-left img, .part-right img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.partners div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.right, .center, .left {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: gold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.social{
+    color: white;
+   background-color: black;
+    
+}
+.social-icons{
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color:none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-left, .service-right {
+        width: 100%;
+    }
+
+    .service-center {
+        width: 100%;
+    }
+}
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part-left, .part-right {
+        width: 100%;
+    }
+}
